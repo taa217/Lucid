@@ -1014,7 +1014,7 @@ export default function Reader() {
                 <IconButton onClick={toggleLeftSidebar} color="primary">
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" color="primary">
+                <Typography variant="h8" color="primary">
                   Q (Prototype)
                 </Typography>
                 <IconButton onClick={toggleRightSidebar} color="primary">
