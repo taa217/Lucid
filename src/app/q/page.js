@@ -957,7 +957,7 @@ export default function Reader() {
                   </IconButton>
                 <Tooltip title="Home" placement="right">
                   <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
-                    <HomeIcon />
+                    <HomeIcon fontSize = 'small' />
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Upload PDF" placement="right">
@@ -973,20 +973,21 @@ export default function Reader() {
                       mb: 2,
                     }}
                   >
-                    <AddIcon />
+                    <AddIcon fontSize = 'small'/>
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Information" placement="right">
                   <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleInfoDialogOpen}>
-                    <InfoIcon />
+                    <InfoIcon fontSize = 'small' />
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Settings" placement="right">
                   <IconButton onClick={handleSettingsClick} sx={{ color: '#fff', mb: 2 }}>
-                    <SettingsIcon />
+                    <SettingsIcon fontSize = 'small'/>
                   </IconButton>
                 </Tooltip>
                 <Menu
+fontSize = 'small'
   anchorEl={anchorEl}
   open={Boolean(anchorEl)}
   onClose={handleClose}
@@ -999,7 +1000,7 @@ export default function Reader() {
                     sx={{ color: '#fff', mb: 2 }}
                     onClick={() => setFeedbackDialogOpen(true)}
                   >
-                    <FeedbackIcon />
+                    <FeedbackIcon fontSize = 'small' />
                   </IconButton>
                 </Tooltip>
               </Box>
