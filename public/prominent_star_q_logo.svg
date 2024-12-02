@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="300px" version="1.1" width="300px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="lightblue" />
+      <stop offset="100%" stop-color="skyblue" />
+    </linearGradient>
+  </defs>
+  <!-- Q Shape -->
+  <circle cx="150" cy="150" r="100" fill="url(#grad)" />
+  <circle cx="150" cy="150" r="70" fill="white" />
+  <!-- Enhanced Tail of Q -->
+  <path d="M150,150 L200,200" stroke="skyblue" stroke-width="15" stroke-linecap="round" />
+  <circle cx="150" cy="150" r="10" fill="skyblue" />
+  <!-- Star at the top right of the Q -->
+  <g transform="translate(220, 60)">
+    <polygon fill="gold" stroke="orange" stroke-width="2" points="0,-20 6,-6 20,-6 8,4 12,18 0,8 -12,18 -8,4 -20,-6 -6,-6" />
+  </g>
+</svg>

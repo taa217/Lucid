@@ -1,0 +1,19 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .person {
+      fill: #f0f0f0;
+      stroke: #000;
+      stroke-width: 2;
+    }
+    .book {
+      fill: #e0e0e0;
+      stroke: #000;
+      stroke-width: 2;
+    }
+  </style>
+
+  <circle class="person" cx="150" cy="100" r="50" />
+  <path class="person" d="M150 150 L120 200 L180 200 Z" />
+  <rect class="book" x="120" y="150" width="60" height="80" />
+  <line class="book" x1="150" y1="170" x2="150" y2="230" />
+</svg>
