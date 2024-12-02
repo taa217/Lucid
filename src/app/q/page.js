@@ -1207,10 +1207,10 @@ export default function Reader() {
                 anchor="right"
                 open={isRightSidebarOpen}
                 sx={{
-                  width: 400,
+                  width: 300,
                   flexShrink: 0,
                   '& .MuiDrawer-paper': {
-                    width: 400,
+                    width: 300,
                     boxSizing: 'border-box',
                     display: 'flex',
                     flexDirection: 'column',
