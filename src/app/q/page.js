@@ -940,7 +940,7 @@ export default function Reader() {
             <Drawer
               variant="permanent"
               sx={{
-                width: 80,
+                width: 60,
                 flexShrink: 0,
                 '& .MuiDrawer-paper': {
                   width: 80,
