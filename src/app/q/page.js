@@ -953,7 +953,7 @@ export default function Reader() {
             >
               <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
-                    <GlowingQ height='100px' width='85%'/>
+                    <GlowingQ height='100px' width='80%'/>
                   </IconButton>
                 <Tooltip title="Home" placement="right">
                   <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
@@ -1061,6 +1061,7 @@ fontSize = 'small'
                   variant="contained"
                   onClick={() => fileInputRef.current?.click()}
                   startIcon={<AddIcon />}
+                    size = 'small'
                   sx={{
                     mb: 2, // Keep this margin as is for spacing
                     background: 'linear-gradient(45deg, #87CEFA 30%, #00BFFF 90%)',
