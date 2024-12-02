@@ -1043,6 +1043,7 @@ export default function Reader() {
             {/* Search Bar */}
             {!fileUrl && (
               <TextField
+                size='small'
                 placeholder="Search books..."
                 variant="outlined"
                 value={searchText}
