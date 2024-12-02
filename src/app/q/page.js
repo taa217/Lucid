@@ -943,7 +943,7 @@ export default function Reader() {
                 width: 60,
                 flexShrink: 0,
                 '& .MuiDrawer-paper': {
-                  width: 80,
+                  width: 60,
                   boxSizing: 'border-box',
                   paddingTop: 4,
                   background: 'linear-gradient(180deg, #87CEFA 0%, #00BFFF 100%)',
