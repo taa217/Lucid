@@ -518,10 +518,10 @@ export default function Reader() {
         body: JSON.stringify({ pageText: false, prompt, initialChatt })
       });
 
-      if (!response.ok){
-        const errormsg = 'Error generating response.Please try again.'
-        setInitialChat(true)
-      }
+      // if (!response.ok){
+      //   const errormsg = 'Error generating response.Please try again.'
+      //   setInitialChat(true)
+      // }
 
       const aiResult = await response.text();
       if (aiResult == 'chat initialized')
