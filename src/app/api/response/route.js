@@ -2,7 +2,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const neew = process.env.GEMINI_API;
-const genAI = new GoogleGenerativeAI(neew);
+const genAI = new GoogleGenerativeAI("AIzaSyDlOncrRgCilJiWISdymwgFs9arYrRRh6Y");
 
 // Convert buffer to GenerativePart object
 function bufferToGenerativePart(buffer, mimeType) {
