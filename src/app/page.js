@@ -165,7 +165,7 @@ export default function Home() {
             ask questions, and let 'Q' help you understand and learn more efficiently.
           </Typography>
           {/* Displaying 'Q' Logo */}
-          <GlowingQSVG height='300px' width='100%'/>
+          <GlowingQSVG height='300px' width='80%'/>
           <Link href='/q'>
           <Button
             variant="contained"
