@@ -1026,7 +1026,7 @@ export default function Reader() {
             {/* Title for the App */}
             {!fileUrl && !isMobile &&
             <Typography 
-              variant="h6" 
+              variant="h8" 
               component="div" 
               sx={{ 
                 fontWeight: 'bold', 
