@@ -518,10 +518,10 @@ export default function Reader() {
         body: JSON.stringify({ pageText: false, prompt, initialChatt })
       });
 
-      // if (!response.ok){
-      //   const errormsg = 'Error generating response.Please try again.'
-      //   setInitialChat(true)
-      // }
+      if (!response.ok){
+        const errormsg = 'Error generating response.Please try again.'
+        setInitialChat(true)
+      }
 
       const aiResult = await response.text();
       if (aiResult == 'chat initialized')
@@ -536,7 +536,7 @@ export default function Reader() {
         console.log(aiResult)
         setChatMessages(prev => {
         const updatedMessages = [...prev];
-        updatedMessages[updatedMessages.length - 1] = { user: prompt, ai: aiResult }; // Replace loading with AI response
+        updatedMessages[updatedMessages.length - 1] = { user: prompt, ai:!response.ok? 'Something went wrong.Please try again' :  aiResult }; // Replace loading with AI response
         return updatedMessages;
         });
 
