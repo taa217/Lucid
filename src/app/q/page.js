@@ -138,12 +138,12 @@ export default function Reader() {
     typography: {
       fontFamily: '"Roboto Slab", serif',
       h6: {
-        fontWeight: 600,
-        fontSize: '1.4rem',
+        fontWeight: 700,
+        fontSize: '1.8rem',
         color: '#87CEFA', // Sky blue for headers
       },
       body1: {
-        fontSize: '1.0rem',
+        fontSize: '1.1',
         lineHeight: 1.7,
         color: '#333333', // Dark text for readability
       },
@@ -1160,7 +1160,7 @@ fontSize = 'small'
                             <CardContent>
                               <Typography
                                 
-                                variant="h5"
+                                variant="h6"
                                 component="div"
                                 sx={{
                                   fontWeight: 600,
