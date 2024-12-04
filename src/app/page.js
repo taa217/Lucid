@@ -339,7 +339,7 @@ export default function Home() {
             <IconButton href="#" target="_blank" color="inherit">
               <Instagram fontSize="large" />
             </IconButton>
-            <IconButton href="#" target="_blank" color="inherit">
+            <IconButton href="https://www.linkedin.com/company/lucidcompany" target="_blank" color="inherit">
               <LinkedIn fontSize="large" />
             </IconButton>
           </Box>
