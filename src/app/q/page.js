@@ -953,11 +953,11 @@ export default function Reader() {
             >
               <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
-                    <GlowingQ height='100px' width='80%'/>
+                    <GlowingQ height='100px' width='85%'/>
                   </IconButton>
                 <Tooltip title="Home" placement="right">
                   <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
-                    <HomeIcon fontSize = 'small' />
+                    <HomeIcon />
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Upload PDF" placement="right">
@@ -973,17 +973,17 @@ export default function Reader() {
                       mb: 2,
                     }}
                   >
-                    <AddIcon fontSize = 'small'/>
+                    <AddIcon/>
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Information" placement="right">
                   <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleInfoDialogOpen}>
-                    <InfoIcon fontSize = 'small' />
+                    <InfoIcon />
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Settings" placement="right">
                   <IconButton onClick={handleSettingsClick} sx={{ color: '#fff', mb: 2 }}>
-                    <SettingsIcon fontSize = 'small'/>
+                    <SettingsIcon/>
                   </IconButton>
                 </Tooltip>
                 <Menu
@@ -1000,7 +1000,7 @@ fontSize = 'small'
                     sx={{ color: '#fff', mb: 2 }}
                     onClick={() => setFeedbackDialogOpen(true)}
                   >
-                    <FeedbackIcon fontSize = 'small' />
+                    <FeedbackIcon />
                   </IconButton>
                 </Tooltip>
               </Box>
@@ -1027,7 +1027,7 @@ fontSize = 'small'
             {/* Title for the App */}
             {!fileUrl && !isMobile &&
             <Typography 
-              variant="h8" 
+              variant="h6" 
               component="div" 
               sx={{ 
                 fontWeight: 'bold', 
@@ -1044,7 +1044,7 @@ fontSize = 'small'
             {/* Search Bar */}
             {!fileUrl && (
               <TextField
-                size='small'
+                
                 placeholder="Search books..."
                 variant="outlined"
                 value={searchText}
@@ -1062,7 +1062,7 @@ fontSize = 'small'
           
                   onClick={() => fileInputRef.current?.click()}
                   startIcon={<AddIcon />}
-                    size = 'small'
+                  
                   sx={{
                     mb: 2, // Keep this margin as is for spacing
                     background: 'linear-gradient(45deg, #87CEFA 30%, #00BFFF 90%)',
