@@ -1212,10 +1212,10 @@ fontSize = 'small'
                 anchor="right"
                 open={isRightSidebarOpen}
                 sx={{
-                  width: 300,
+                  width: 400,
                   flexShrink: 0,
                   '& .MuiDrawer-paper': {
-                    width: 300,
+                    width: 400,
                     boxSizing: 'border-box',
                     display: 'flex',
                     flexDirection: 'column',
