@@ -138,13 +138,13 @@ export default function Reader() {
     typography: {
       fontFamily: '"Roboto Slab", serif',
       h6: {
-        fontWeight: 700,
-        fontSize: '1.8rem',
+        fontWeight: 600,
+        fontSize: '1.4rem',
         color: '#87CEFA', // Sky blue for headers
       },
       body1: {
-        fontSize: '1.1rem',
-        lineHeight: 1.8,
+        fontSize: '1.0rem',
+        lineHeight: 1.7,
         color: '#333333', // Dark text for readability
       },
       a: {
@@ -1059,6 +1059,7 @@ fontSize = 'small'
               <Box sx={{ mt: 1 }}> {/* Reduced margin-top from 3 to 2 */}
                 <Button
                   variant="contained"
+          
                   onClick={() => fileInputRef.current?.click()}
                   startIcon={<AddIcon />}
                     size = 'small'
@@ -1158,7 +1159,8 @@ fontSize = 'small'
                             </Box>
                             <CardContent>
                               <Typography
-                                variant="h6"
+                                
+                                variant="h5"
                                 component="div"
                                 sx={{
                                   fontWeight: 600,
