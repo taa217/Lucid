@@ -1039,7 +1039,7 @@ export default function Reader() {
                 textAlign: 'center' // Center the title
               }}
             >
-              Q (prototype)
+              Q prototype
             </Typography>}
 
             {/* Search Bar */}
