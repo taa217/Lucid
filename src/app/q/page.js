@@ -1030,7 +1030,7 @@ export default function Reader() {
               variant="h6" 
               component="div" 
               sx={{ 
-                fontSize: '0.9rem',
+                fontSize: '1.5rem',
                 fontWeight: 'bold', 
                 color: '#00BFFF', 
                 mb: '0.00000000000000008rem',
