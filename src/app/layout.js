@@ -12,14 +12,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-export const viewport = {
-  width: 'device-width',
-  initialScale: '0.8',
-  maximumScale: '0.8',
-  userScalable: false,
-  // Also supported by less commonly used
-  // interactiveWidget: 'resizes-visual',
-}
 export const metadata = {
   title: "Lucid",
   description: "Enhanced learning with AI. ",
