@@ -1109,7 +1109,7 @@ export default function Reader() {
                             <CardMedia
                               component="div"
                               sx={{
-                                height: '15rem',
+                                height: '14rem',
                                 backgroundColor: 'rgba(135, 206, 250, 0.1)',
                                 display: 'flex',
                                 alignItems: 'center',
