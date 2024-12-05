@@ -1354,7 +1354,7 @@ export default function Reader() {
                     
                 {/* </Markdown> */}
               </AnimatedMarkdown>) }
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: 2 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '0.0625rem', mt: '0.0625rem' }}>
                   {!chatHistory?.length && fileUrl && (
                     <Button
                       variant="contained"
@@ -1368,6 +1368,7 @@ export default function Reader() {
                       }}
                       disabled={!file || explanationLoading || !isPdfUploaded}
                       sx={{
+                         fontSize:'0.6rem',
                         transition: 'background-color 0.3s, transform 0.3s',
                         '&:hover': {
                           backgroundColor: '#00BFFF',
