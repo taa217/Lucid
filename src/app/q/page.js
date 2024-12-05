@@ -1249,9 +1249,9 @@ fontSize = 'small'
                   >
                     <Markdown
                       components={{
-                        h1: ({ node, ...props }) => <Typography variant="h4" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}} />,
-                        h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}}/>,
-                        p: ({ node, ...props }) => <Typography variant="body1" paragraph {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}} />,
+                        h1: ({ node, ...props }) => <Typography variant="h4" gutterBottom {...props} sx={{color: aiError  ? 'red' : 'gray'}} />,
+                        h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError ? 'red' : 'gray'}}/>,
+                        p: ({ node, ...props }) => <Typography variant="body1" paragraph {...props} sx={{color: aiError  ? 'red' : 'gray'}} />,
                         li: ({ node, ...props }) => <li style={{ marginBottom: '0.75rem', paddingLeft: '1.2rem' }} {...props} />,
                         a: ({ node, ...props }) => (
                           <a
