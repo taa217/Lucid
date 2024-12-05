@@ -1211,10 +1211,10 @@ export default function Reader() {
                 anchor="right"
                 open={isRightSidebarOpen}
                 sx={{
-                  width: '20rem',
+                  width: '21rem',
                   flexShrink: 0,
                   '& .MuiDrawer-paper': {
-                    width: '20rem',
+                    width: '21rem',
                     boxSizing: 'border-box',
                     display: 'flex',
                     flexDirection: 'column',
@@ -1226,15 +1226,15 @@ export default function Reader() {
                   },
                 }}
               >
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-                  <Typography variant="h6" sx={{ fontFamily: '"Roboto Slab", serif', color: 'primary.main' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: '0.0625rem' }}>
+                  <Typography variant="h6" sx={{ fontFamily: '"Roboto Slab", serif', color: 'primary.main',fontSize: '1.5rem'  }}>
                     {fileUrl ? 'Q Explanations' : 'Chat'}
                   </Typography>
                   <IconButton onClick={toggleRightSidebar} sx={{ color: 'primary.main' }}>
                     <Switch label="On Page Explanations" size="big" onChange={()=> setThesWitch(!theSwitch)} checked={theSwitch && isPdfUploaded}/>
                   </IconButton>
                 </Box>
-                <Divider sx={{ mb: 2, backgroundColor: '#87CEFA33' }} />
+                <Divider sx={{ mb: '0.0625rem', backgroundColor: '#87CEFA33' }} />
                 {fileUrl ? ( // Check if a document is opened
                   <AnimatedMarkdown
                     initial={{ opacity: 0 }}
