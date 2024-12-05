@@ -1366,7 +1366,7 @@ export default function Reader() {
                         handlePageChange(currentPage)
                         }
                       }}
-                      disabled={!file || explanationLoading}
+                      disabled={!file || explanationLoading || !isPdfUploaded}
                       sx={{
                         transition: 'background-color 0.3s, transform 0.3s',
                         '&:hover': {
@@ -1578,7 +1578,7 @@ export default function Reader() {
                         handlePageChange(currentPage)
                       }
                     }}
-                    disabled={!file || explanationLoading}
+                    disabled={!file || explanationLoading || !isPdfUploaded}
                     sx={{
                       width: '100%', // Make the button full width
                       mb: 1, // Add margin-bottom for spacing
