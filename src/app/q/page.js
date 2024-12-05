@@ -686,7 +686,7 @@ export default function Reader() {
       console.log(url)
       console.log(file)
       
-      setSnackbar({ open: true, message: 'Book loaded successfully!', severity: 'success' });
+      setSnackbar({ open: true, message: 'Processing PDF...', severity: 'info' });
     } catch (error) {
       console.error('Error loading book:', error);
       setSnackbar({ open: true, message: 'Error loading book.', severity: 'error' });
