@@ -1279,7 +1279,7 @@ export default function Reader() {
                         color: 'transparent', 
                         background: 'linear-gradient(45deg, #4fcaff, #7b65ff, #f57cff)', 
                         WebkitBackgroundClip: 'text', 
-                        fontSize: '1.5rem', 
+                        fontSize: '1.2rem', 
                         fontWeight: 'bold' 
                       }}
                     >
