@@ -102,6 +102,7 @@ export default function Reader() {
     other: [],
     moreDetails: ''
   });
+  
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userEmail, setUserEmail] = useState('');
   const [submissionStatus, setSubmissionStatus] = useState({ 
@@ -143,8 +144,8 @@ export default function Reader() {
         color: '#87CEFA', // Sky blue for headers
       },
       body1: {
-        fontSize: '1.1',
-        lineHeight: 1.7,
+        fontSize: '1.1rem',
+        lineHeight: 1.8,
         color: '#333333', // Dark text for readability
       },
       a: {
@@ -536,7 +537,7 @@ export default function Reader() {
         console.log(aiResult)
         setChatMessages(prev => {
         const updatedMessages = [...prev];
-        updatedMessages[updatedMessages.length - 1] = { user: prompt, ai:!response.ok? 'Something went wrong.Please try again' :  aiResult }; // Replace loading with AI response
+        updatedMessages[updatedMessages.length - 1] = { user: prompt, ai:!response.ok ? 'Something went wrong.Please try again.' : aiResult }; // Replace loading with AI response
         return updatedMessages;
         });
 
@@ -940,19 +941,19 @@ export default function Reader() {
             <Drawer
               variant="permanent"
               sx={{
-                width: 80,
+                width: '4rem',
                 flexShrink: 0,
                 '& .MuiDrawer-paper': {
-                  width: 80,
+                  width: '4rem',
                   boxSizing: 'border-box',
-                  paddingTop: 4,
+                  paddingTop: '0.4rem',
                   background: 'linear-gradient(180deg, #87CEFA 0%, #00BFFF 100%)',
                   color: '#ffffff',
                 },
               }}
             >
               <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <IconButton sx={{ color: '#fff', mb: 2 }} onClick={handleHomeClick}>
+              <IconButton sx={{ color: '#fff', mb: 2  }} onClick={handleHomeClick}>
                     <GlowingQ height='100px' width='85%'/>
                   </IconButton>
                 <Tooltip title="Home" placement="right">
@@ -973,7 +974,7 @@ export default function Reader() {
                       mb: 2,
                     }}
                   >
-                    <AddIcon/>
+                    <AddIcon />
                   </IconButton>
                 </Tooltip>
                 <Tooltip title="Information" placement="right">
@@ -983,11 +984,10 @@ export default function Reader() {
                 </Tooltip>
                 <Tooltip title="Settings" placement="right">
                   <IconButton onClick={handleSettingsClick} sx={{ color: '#fff', mb: 2 }}>
-                    <SettingsIcon/>
+                    <SettingsIcon />
                   </IconButton>
                 </Tooltip>
                 <Menu
-fontSize = 'small'
   anchorEl={anchorEl}
   open={Boolean(anchorEl)}
   onClose={handleClose}
@@ -1008,14 +1008,14 @@ fontSize = 'small'
           )}
 
           {/* Main Content */}
-          <Box sx={{ flexGrow: 1, p: { xs: 2, md: 1 }, display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <Box sx={{ flexGrow: 1, p: { xs: 2, md: '0.3rem' }, display: 'flex', flexDirection: 'column', gap: '0.9625rem' }}>
             {/* Top Bar with Sidebar Icon on Mobile */}
             {isMobile && (
               <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <IconButton onClick={toggleLeftSidebar} color="primary">
                   <MenuIcon />
                 </IconButton>
-                <Typography variant="h8" color="primary">
+                <Typography variant="h6" color="primary">
                   Q (Prototype)
                 </Typography>
                 <IconButton onClick={toggleRightSidebar} color="primary">
@@ -1030,9 +1030,10 @@ fontSize = 'small'
               variant="h6" 
               component="div" 
               sx={{ 
+                fontSize: '0.9rem',
                 fontWeight: 'bold', 
                 color: '#00BFFF', 
-                mb: 0.1,
+                mb: '0.00000000000000008rem',
                 mt: 0,
                  // Reduced margin to minimize space
                 textAlign: 'center' // Center the title
@@ -1044,13 +1045,13 @@ fontSize = 'small'
             {/* Search Bar */}
             {!fileUrl && (
               <TextField
-                
                 placeholder="Search books..."
                 variant="outlined"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 fullWidth
-                sx={{ mb: 0.3, backgroundColor: '#ffffff', borderRadius: 2 }} // Reduced margin-bottom from 2 to 1
+                size='small'
+                sx={{ mb: '0.00875rem', backgroundColor: '#ffffff', borderRadius: 2 }} // Reduced margin-bottom from 2 to 1
               />
             )}
 
@@ -1059,12 +1060,11 @@ fontSize = 'small'
               <Box sx={{ mt: 1 }}> {/* Reduced margin-top from 3 to 2 */}
                 <Button
                   variant="contained"
-          
                   onClick={() => fileInputRef.current?.click()}
                   startIcon={<AddIcon />}
-                  
                   sx={{
-                    mb: 2, // Keep this margin as is for spacing
+                    fontSize: '0.7rem',
+                    mb: '0.5rem', // Keep this margin as is for spacing
                     background: 'linear-gradient(45deg, #87CEFA 30%, #00BFFF 90%)',
                     boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
                     transition: 'transform 0.2s',
@@ -1078,7 +1078,7 @@ fontSize = 'small'
 
                 <Grid container spacing={3}>
                   {filteredBooks.map((book, index) => (
-                    <Grid item xs={12} sm={6} md={4} lg={3} key={book.id}>
+                    <Grid item  xs={12} sm={6} md={4} lg={3} key={book.id} >
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -1109,7 +1109,7 @@ fontSize = 'small'
                             <CardMedia
                               component="div"
                               sx={{
-                                height: 280,
+                                height: '15rem',
                                 backgroundColor: 'rgba(135, 206, 250, 0.1)',
                                 display: 'flex',
                                 alignItems: 'center',
@@ -1150,7 +1150,7 @@ fontSize = 'small'
                                 sx={{
                                   color: '#fff',
                                   backgroundColor: 'rgba(135, 206, 250, 0.9)',
-                                  padding: '8px 16px',
+                                  padding: '0.5rem 1rem',
                                   borderRadius: 1,
                                 }}
                               >
@@ -1159,12 +1159,11 @@ fontSize = 'small'
                             </Box>
                             <CardContent>
                               <Typography
-                                
                                 variant="h6"
                                 component="div"
                                 sx={{
-                                  fontWeight: 600,
-                                  fontSize: '1.1rem',
+                                  fontWeight: '1rem',
+                                  fontSize: '0.9rem',
                                   overflow: 'hidden',
                                   textOverflow: 'ellipsis',
                                   display: '-webkit-box',
@@ -1212,10 +1211,10 @@ fontSize = 'small'
                 anchor="right"
                 open={isRightSidebarOpen}
                 sx={{
-                  width: 400,
+                  width: '20rem',
                   flexShrink: 0,
                   '& .MuiDrawer-paper': {
-                    width: 400,
+                    width: '20rem',
                     boxSizing: 'border-box',
                     display: 'flex',
                     flexDirection: 'column',
@@ -1250,7 +1249,7 @@ fontSize = 'small'
                     <Markdown
                       components={{
                         h1: ({ node, ...props }) => <Typography variant="h4" gutterBottom {...props} sx={{color: aiError  ? 'red' : 'gray'}} />,
-                        h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError ? 'red' : 'gray'}}/>,
+                        h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError  ? 'red' : 'gray'}}/>,
                         p: ({ node, ...props }) => <Typography variant="body1" paragraph {...props} sx={{color: aiError  ? 'red' : 'gray'}} />,
                         li: ({ node, ...props }) => <li style={{ marginBottom: '0.75rem', paddingLeft: '1.2rem' }} {...props} />,
                         a: ({ node, ...props }) => (
@@ -1483,7 +1482,7 @@ fontSize = 'small'
             >
               <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <Typography variant="h6" color="primary">
+                  <Typography variant="h5" color="primary">
                   {fileUrl ? 'Q Explanations' : 'Chat'}
                   </Typography>
                   <IconButton onClick={toggleRightSidebar} color="primary">
