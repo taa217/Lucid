@@ -1,4 +1,4 @@
-
+import Head from 'next/head';
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -20,6 +20,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <Head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W0Q458T805"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W0Q458T805');
+</script>
+    </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
