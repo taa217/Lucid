@@ -1366,7 +1366,7 @@ export default function Reader() {
                         handlePageChange(currentPage)
                         }
                       }}
-                      disabled={!file || explanationLoading || !isPdfUploaded}
+                      disabled={(!isPdfUploaded && !fetchTry) || !file || explanationLoading}
                       sx={{
                          fontSize:'0.6rem',
                         transition: 'background-color 0.3s, transform 0.3s',
@@ -1579,7 +1579,7 @@ export default function Reader() {
                         handlePageChange(currentPage)
                       }
                     }}
-                    disabled={!file || explanationLoading || !isPdfUploaded}
+                    disabled={(!isPdfUploaded && !fetchTry) || !file || explanationLoading}
                     sx={{
                       width: '100%', // Make the button full width
                       mb: 1, // Add margin-bottom for spacing
