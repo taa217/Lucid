@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <Head>
-    <!-- Google tag (gtag.js) -->
+  
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0Q458T805"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
