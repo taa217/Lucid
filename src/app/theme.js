@@ -9,7 +9,7 @@ const theme = createTheme({
     fontFamily: 'Roboto, sans-serif',
     h1: { fontWeight: 600, fontSize: '3rem' },
     h2: { fontWeight: 500, fontSize: '2.5rem' },
-    body1: { fontSize: '1.2rem', lineHeight: 1.6 },
+    body1: { fontSize: '1.0rem', lineHeight: 1.4 },
   },
 });
 
