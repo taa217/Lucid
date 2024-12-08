@@ -326,7 +326,7 @@ import Image from 'next/image';
             <Grid item xs={4} sm={3}>
               <Avatar
                 alt="Clyde Tadiwa Rumombe"
-                src='/ceo.jpg'
+                src='/ceo1.jpg'
                 sx={{ width: 120, height: 120 }}
               />
             </Grid>
