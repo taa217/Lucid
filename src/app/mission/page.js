@@ -91,11 +91,12 @@ import Image from 'next/image';
        {/* Navbar */}
       <AppBar position="sticky" color="transparent" elevation={0}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Link href='/' color='inherit' underline='none'>
-          <Typography variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
+        <Link href='/' color='inherit' underline='none' display='flex' alignItems='center' sx={{ margin: 0, padding: 0}}>
+          <Image src='/Lucid (2).svg' height={90} width={80} style={{ marginRight: '-25px' }}/>
+          <Typography variant="h5" component="div" sx={{ fontWeight: 'bold', margin: 0 }}>
             Lucid
           </Typography>
-          </Link>
+        </Link>
         
           <Box>
             <Link href='/mission' color='inherit'>
