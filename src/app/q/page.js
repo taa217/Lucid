@@ -346,10 +346,10 @@ export default function Reader() {
         style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}
       >
         <motion.img
-          src='/lucidlogo.svg'
+          src='/Lucid (2).svg'
           alt="Q Logo"
-          width={80}
-          height={80}
+          width={160}
+          height={160}
           style={{ marginRight: '10px' }}
           animate={{ rotate: 360 }}
           transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
