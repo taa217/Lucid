@@ -47,8 +47,8 @@ export async function GET() {
     },
     {
       id: 7,
-      title: "Calculus - UZ",
-      path: "/books/calculus.pdf",
+      title: "Reconciling the Event Calculus",
+      path: "/books/Reconciling the Event Calculus.pdf",
       thumbnail: "/calculus.png"
   },
  
