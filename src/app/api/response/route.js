@@ -64,6 +64,7 @@ export async function POST(req) {
       const { pageText,prompt , initialChatt} = await req.json();
       if(pageText){
         if (!activeChat) {
+          console.log('chat not initialised');
           throw new Error('Chat not initialized. Please upload PDF first.');
         }
         const result = await activeChat.sendMessage(
