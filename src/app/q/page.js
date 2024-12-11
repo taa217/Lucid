@@ -346,8 +346,8 @@ export default function Reader() {
         style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}
       >
         <motion.img
-          src='/Lucid (2).svg'
-          alt="Q Logo"
+          src='/Lucid (5).svg'
+          alt="Lucid Logo"
           width={160}
           height={160}
           style={{ marginRight: '10px' }}
