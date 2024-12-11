@@ -395,8 +395,8 @@ export default function Reader() {
           textAlign: 'center',
         }}
       >
-        <Typography variant="body1" sx={{ color: '#ffffff', fontWeight: 'medium', fontSize: '1rem' }}>
-          From Lucid
+        <Typography variant="body1" sx={{fontWeight: 'medium', fontSize: '1rem' }}>
+          Lucid
         </Typography>
       </motion.div>
 
