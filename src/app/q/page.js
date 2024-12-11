@@ -325,7 +325,7 @@ export default function Reader() {
       open={loading}
       sx={{
         zIndex: (theme) => theme.zIndex.drawer + 1,
-        background: 'linear-gradient(135deg, #f0f4f8, #87CEFA)',
+        background: 'white',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -354,9 +354,7 @@ export default function Reader() {
           animate={{ rotate: 360 }}
           transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
         />
-        <Typography variant="h2" component="div" sx={{ fontWeight: 'bold', color: '#ffffff', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-          Q
-        </Typography>
+       
       </motion.div>
 
       {/* Enhanced Loading Spinner */}
