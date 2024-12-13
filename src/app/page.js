@@ -331,7 +331,7 @@ export default function Home() {
 
           {/* Social Media Icons */}
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 4 }}>
-            <IconButton href="#" target="_blank" color="inherit">
+            <IconButton href="https://www.facebook.com/lucidai.company" target="_blank" color="inherit">
               <Facebook fontSize="large" />
             </IconButton>
             <IconButton href="#" target="_blank" color="inherit">
