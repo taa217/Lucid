@@ -8,13 +8,13 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.USER_EMAIL,
-        pass: process.env.USER_PASS
+        user: 'lucidinc11@gmail.com',
+        pass: 'sxnh jxnr pbxe juky'
       }
     });
 
     const mailOptions = {
-      from: process.env.USER_EMAIL,
+      from: 'lucidinc11@gmail.com',
       to: 'lucidinc11@gmail.com',
       subject: 'New LucidQ Feedback',
       html: `
