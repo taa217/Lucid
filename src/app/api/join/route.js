@@ -8,14 +8,14 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.USER_EMAIL,
-        pass: process.env.USER_PASS, // Use environment variables for security
+        user: 'lucidinc11@gmail.com',
+        pass: 'sxnh jxnr pbxe juky', // Use environment variables for security
       },
     });
 
     const mailOptions = {
-      from: process.env.USER_EMAIL,
-      to: process.env.USER_EMAIL,
+      from: 'lucidinc11@gmail.com',
+      to: 'lucidinc11@gmail.com',
       subject: `Job Application from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nPosition: ${position}\nExperience: ${experience}`,
     };
