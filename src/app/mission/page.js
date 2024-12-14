@@ -138,9 +138,8 @@ import Image from 'next/image';
             color="textSecondary"
             sx={{ maxWidth: '600px', margin: '0 auto', color: 'black' }}
           >
-            Our goal is to simplify the world&apos;s information, making it easy to
-            comprehend for everyone, whether you're a researcher, a student, or
-            a curious mind.
+           Our mission is to create transformative technologies that enhance learning, make information intuitive, and accelerate knowledge acquisition to shape a brighter
+               future.
           </Typography>
           <Link href='/q'>
           <Button
@@ -332,7 +331,7 @@ import Image from 'next/image';
               />
             </Grid>
             <Grid item xs={8} sm={9}>
-              <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
                 Clyde Tadiwa Rumombe
               </Typography>
               <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
@@ -351,8 +350,8 @@ import Image from 'next/image';
                  <Image
                 alt="signature"
                 src='/signature.png'
-                width={280}
-                height={280}
+                width={200}
+                height={200}
               />
               </Typography>
             </Grid>
