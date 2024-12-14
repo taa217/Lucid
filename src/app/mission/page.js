@@ -422,7 +422,7 @@ import Image from 'next/image';
             <IconButton href="https://www.facebook.com/lucidai.company" target="_blank" color="inherit">
               <Facebook fontSize="large" />
             </IconButton>
-            <IconButton href="#" target="_blank" color="inherit">
+            <IconButton href="https://x.com/lucid_startup" target="_blank" color="inherit">
               <X fontSize="large" />
             </IconButton>
             <IconButton href="https://www.instagram.com/lucidai_company" target="_blank" color="inherit">
