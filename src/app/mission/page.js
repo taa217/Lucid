@@ -323,13 +323,13 @@ import Image from 'next/image';
   
           {/* CEO Image and Signature */}
           <Grid container spacing={0} alignItems="center" sx={{ mt: 6 }}>
-           // <Grid item xs={4} sm={3}>
+           <Box sx={{ display: 'flex', alignItems: 'center', mt: 6 }}>
               <Avatar
                 alt="Clyde Tadiwa Rumombe"
                 src='/ceo1.jpg'
                 sx={{ width: 120, height: 120 }}
               // />
-            </Grid>
+            </Box>
             <Grid item xs={8} sm={9}>
               <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
                 Clyde Tadiwa Rumombe
