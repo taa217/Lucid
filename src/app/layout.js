@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Lucid",
   description: "Enhanced learning with AI. ",
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  viewport: 'width=device-width, initial-scale=0.5, maximum-scale=0.5',
 };
 
 export default function RootLayout({ children }) {
