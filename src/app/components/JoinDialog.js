@@ -72,7 +72,7 @@ const JoinDialog = ({ open, onClose }) => {
         <DialogContent>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Typography>
-              You have experience in any of the following tech stack: LangChain,Hugging Face Transformers, Apache Spark/Flink, ReAct (Reasoning + Acting) Framework,Coqui, Neo4j? Join Us!
+              You have experience in any of the following tech stack: LangChain,Hugging Face Transformers, Rust Programming,Apache Spark/Flink, ReAct (Reasoning + Acting) Framework,Coqui, Neo4j? Join Us!
             </Typography>
             <TextField
               name="name"
