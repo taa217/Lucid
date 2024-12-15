@@ -331,7 +331,7 @@ import Image from 'next/image';
               />
             </Grid>
             <Grid item xs={8} sm={9}>
-              <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
+              <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
                 Clyde Tadiwa Rumombe
               </Typography>
               <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
