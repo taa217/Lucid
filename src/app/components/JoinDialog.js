@@ -174,7 +174,7 @@ const JoinDialog = ({ open, onClose }) => {
         }}
       >
         <DialogTitle sx={{ textAlign: 'center', color: '#00BFFF' }}>
-          Application Received
+          Application Received!
         </DialogTitle>
         <DialogContent>
           <Typography variant="body1" sx={{ textAlign: 'center' }}>
