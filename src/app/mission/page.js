@@ -246,11 +246,10 @@ import Image from 'next/image';
                 }}
               >
                 <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'black' }}>
-                  Integrity
+                  Intuition
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: '1.8', color: 'black' }}>
-                  We are committed to ethical practices and transparency in all our
-                  endeavors.
+                 We design solutions that anticipate user needs, creating experiences that feel natural, seamless, and effortless.
                 </Typography>
               </Box>
             </Grid>
