@@ -120,6 +120,7 @@ const JoinDialog = ({ open, onClose }) => {
             <TextField
               name="experience"
               label="Experience"
+              placeholder = "ex: Rust programming"
               fullWidth
               margin="normal"
               multiline
