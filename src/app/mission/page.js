@@ -328,7 +328,7 @@ import Image from 'next/image';
                 alt="Clyde Tadiwa Rumombe"
                 src='/ceo1.jpg'
                 sx={{ width: 120, height: 120 }}
-              // />
+               />
             </Box>
             <Grid item xs={8} sm={9}>
               <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
