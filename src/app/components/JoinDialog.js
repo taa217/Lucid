@@ -6,7 +6,7 @@ const JoinDialog = ({ open, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    position: '',
+    linkedInUrl: '',
     experience: '',
   });
   const [loading, setLoading] = useState(false);
@@ -91,6 +91,20 @@ const JoinDialog = ({ open, onClose }) => {
             <TextField
               name="email"
               label="Email"
+              fullWidth
+              margin="normal"
+              onChange={handleChange}
+              InputProps={{
+                startAdornment: (
+                  <Email sx={{ color: 'action.active', mr: 1 }} />
+                ),
+              }}
+              variant="outlined"
+              sx={{ borderRadius: '8px' }}
+            />
+              <TextField
+              name="linkedInUrl"
+              label="LinkedIn/X/Facebook url"
               fullWidth
               margin="normal"
               onChange={handleChange}
