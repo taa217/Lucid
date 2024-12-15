@@ -104,7 +104,7 @@ const JoinDialog = ({ open, onClose }) => {
             />
               <TextField
               name="linkedInUrl"
-              label="LinkedIn/X/Facebook url"
+              label="LinkedIn / X / Facebook url"
               fullWidth
               margin="normal"
               onChange={handleChange}
