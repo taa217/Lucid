@@ -24,6 +24,7 @@ export const viewport = {
 export const metadata = {
   title: "Lucid",
   description: "Enhanced learning with AI. ",
+  viewport: "width=device-width, initial-scale=0.4",
   
 };
 
