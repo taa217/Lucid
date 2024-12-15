@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   // if (req.method === 'POST') {
-    const { name, email, position, experience } = await req.json()
+    const { name, email, linkedInUrl, experience } = await req.json()
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -17,7 +17,7 @@ export async function POST(req) {
       from: 'lucidinc11@gmail.com',
       to: 'lucidinc11@gmail.com',
       subject: `Job Application from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPosition: ${position}\nExperience: ${experience}`,
+      text: `Name: ${name}\nEmail: ${email}\nlinkedInUrl: ${linkedInUrl}\nExperience: ${experience}`,
     };
 
     try {
