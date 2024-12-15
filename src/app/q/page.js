@@ -1014,7 +1014,7 @@ export default function Reader() {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" color="primary">
-                  Q Prototype
+                  Q (prototype)
                 </Typography>
                 <IconButton onClick={toggleRightSidebar} color="primary">
                   <Try />
@@ -1037,7 +1037,7 @@ export default function Reader() {
                 textAlign: 'center' // Center the title
               }}
             >
-              Q prototype
+              Q (prototype)
             </Typography>}
 
             {/* Search Bar */}
