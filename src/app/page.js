@@ -89,7 +89,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ fontSize: '30px', lineHeight: '2.6' }}> {/* Global font size and line height */}
+    <div style={{ fontSize: '30px', lineHeight: '2.6',overflowX: 'hidden'  }}> {/* Global font size and line height */}
       {/* Navbar */}
       <AppBar position="stick" color="transparent" elevation={0} sx={{ borderBottom: '1px solid #e0e0e0' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
