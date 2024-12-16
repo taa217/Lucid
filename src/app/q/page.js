@@ -1316,7 +1316,7 @@ export default function Reader() {
                                   color: msg.user ? 'blue' : 'gray', 
                                   lineHeight: '30px', // Match line height to icon size
                                   display: 'flex', 
-                                  alignItems: 'center' // Center align text vertically
+                                  alignItems: 'center', // Center align text vertically
                                    overflowWrap: 'break-word',
                                 }}
                               >
