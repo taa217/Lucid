@@ -588,7 +588,7 @@ export default function Reader() {
                  // setFetchTry(true)
                 }
                 else{
-                   errorMessage = "Something went wrong. Try again"
+                   errorMessage = "Something went wrong. Try again. You might need to refresh your browser."
                   // setFetchTry(true)
                   
                 }
