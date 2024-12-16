@@ -5,7 +5,7 @@ const GlowingQSVG = ({width,height}) => {
     <div style={{ position: 'relative', width: width, height: height, alignItems: 'center' }}>
       {/* SVG Container */}
       <svg
-        viewBox="0 0 100 100"
+        viewBox="0 0 80 100"
         xmlns="http://www.w3.org/2000/svg"
         style={{ width: '90%', height: '100%' }}
       >
