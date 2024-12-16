@@ -1242,6 +1242,7 @@ export default function Reader() {
                       flexGrow: 1,
                       overflowY: 'auto',
                       pr: 1,
+                       overflowWrap: 'break-word'
                     }}
                   >
                     <Markdown
@@ -1493,7 +1494,7 @@ export default function Reader() {
                 {/* Display explanations if a document is uploaded */}
                 {fileUrl ? (
                   <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
-                    <Typography variant="body1" sx={{ padding: 2 }}>
+                    <Typography variant="body1" sx={{ padding: 2 , overflowWrap: 'break-word'}}>
                       {ai} {/* Display the explanation here */}
                     </Typography>
                   </Box>
