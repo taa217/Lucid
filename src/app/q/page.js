@@ -1301,7 +1301,7 @@ export default function Reader() {
                       {/* <Box sx={{ overflowY: 'auto', maxHeight: '400px', border: '1px solid #ccc', borderRadius: '4px', padding: 2 }}> */}
                         {chatMessages.map((msg, index) => (
                           <Box ref={chatContainerRef} key={index} sx={{ marginBottom: 1, display: 'flex', flexDirection: 'column', alignItems: msg.user ? 'flex-start' : 'flex-end' }}>
-                            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                            <Box sx={{ display: 'flex', alignItems: 'center', overflowWrap: 'break-word', }}>
                               {msg.user && <AccountCircle sx={{ marginRight: 1, fontSize: 30 }} />} {/* User icon with adjusted size */}
 
 
@@ -1317,6 +1317,7 @@ export default function Reader() {
                                   lineHeight: '30px', // Match line height to icon size
                                   display: 'flex', 
                                   alignItems: 'center' // Center align text vertically
+                                   overflowWrap: 'break-word',
                                 }}
                               >
                                 {msg.user ? msg.user : 'AI:'} {/* Display user text next to the icon */}
