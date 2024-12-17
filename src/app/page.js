@@ -331,7 +331,7 @@ export default function Home() {
 
           {/* Social Media Icons */}
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 4 }}>
-            <IconButton href="https://www.facebook.com/lucidai.company" target="_blank" color="inherit">
+            <IconButton href="https://www.facebook.com/profile.php?id=61570905955686" target="_blank" color="inherit">
               <Facebook fontSize="large" />
             </IconButton>
             <IconButton href="https://x.com/lucid_startup" target="_blank" color="inherit">
