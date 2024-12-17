@@ -1300,7 +1300,7 @@ export default function Reader() {
                      
                       {/* <Box sx={{ overflowY: 'auto', maxHeight: '400px', border: '1px solid #ccc', borderRadius: '4px', padding: 2 }}> */}
                         {chatMessages.map((msg, index) => (
-                          <Box ref={chatContainerRef} key={index} sx={{ marginBottom: 1, display: 'flex', flexDirection: 'column', alignItems: msg.user ? 'flex-start' : 'flex-end' }}>
+                          <Box ref={chatContainerRef} key={index} sx={{ marginBottom: 1, display: 'flex', flexDirection: 'column', alignItems: msg.user ? 'flex-start' : 'flex-end',overflowWrap: 'break-word', }}>
                             <Box sx={{ display: 'flex', alignItems: 'center', overflowWrap: 'break-word', }}>
                               {msg.user && <AccountCircle sx={{ marginRight: 1, fontSize: 30 }} />} {/* User icon with adjusted size */}
 
@@ -1329,9 +1329,9 @@ export default function Reader() {
                                 <CircularProgress size={20} sx={{ marginRight: 1 }} /> // Show loading spinner
                               ) :  <Markdown
                               components={{
-                                h1: ({ node, ...props }) => <Typography variant="h4" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}} />,
-                                h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}} />,
-                                p: ({ node, ...props }) => <Typography variant="body1" paragraph {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray'}} />,
+                                h1: ({ node, ...props }) => <Typography variant="h4" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray', overflowWrap: 'break-word',}} />,
+                                h2: ({ node, ...props }) => <Typography variant="h5" gutterBottom {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray', overflowWrap: 'break-word',}} />,
+                                p: ({ node, ...props }) => <Typography variant="body1" paragraph {...props} sx={{color: aiError || msg.ai === "Something went wrong.Please try again." ? 'red' : 'gray', overflowWrap: 'break-word',}} />,
                                 li: ({ node, ...props }) => <li style={{ marginBottom: '0.75rem', paddingLeft: '1.2rem' }} {...props} />,
                                 a: ({ node, ...props }) => (
                                   <a
