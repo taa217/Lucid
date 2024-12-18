@@ -29,6 +29,9 @@ import Image from 'next/image';
   const [isSubscribing, setIsSubscribing] = useState(false);
   const [subscriptionStatus, setSubscriptionStatus] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false); // State for dialog
+     const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
 
   // Simulate book upload
   const handleUploadClick = () => {
