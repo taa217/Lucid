@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 //import Link from 'next/link';
 import {
     AppBar,
