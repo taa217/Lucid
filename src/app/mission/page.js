@@ -372,16 +372,17 @@ import Image from 'next/image';
           </Typography>
           
           {/* Email Subscription Input */}
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 4 }}>
+         <Box sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: 'center', mb: 4 }}>
             <TextField
               variant="outlined"
               placeholder="Enter your email"
               size="small"
-              sx={{ 
-                width: '250px', 
-                backgroundColor: '#fff', 
-                borderRadius: 1, 
-                mr: 2 
+              sx={{
+                width: isMobile ? '100%' : '250px',
+                backgroundColor: '#fff',
+                borderRadius: 1,
+                mr: isMobile ? 0 : 2,
+                mb: isMobile ? 2 : 0
               }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -391,8 +392,9 @@ import Image from 'next/image';
               variant="contained"
               color="primary"
               size="small"
-              sx={{ 
+              sx={{
                 fontWeight: 'bold',
+                width: isMobile ? '100%' : 'auto',
                 position: 'relative',
                 '&.Mui-disabled': {
           backgroundColor: 'lightgray', // Ensure styles apply when disabled
@@ -404,18 +406,7 @@ import Image from 'next/image';
             >
               {isSubscribing ? 'Subscribing...' : 'Subscribe'}
             </Button>
-            {subscriptionStatus && (
-              <Typography
-                variant="caption"
-                sx={{
-                  position: 'absolute',
-                  mt: 5,
-                  color: subscriptionStatus.includes('thank you') ? 'green' : 'red'
-                }}
-              >
-                {subscriptionStatus}
-              </Typography>
-            )}
+           
           </Box>
 
           {/* Social Media Icons */}
